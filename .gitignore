@@ -1,0 +1,28 @@
+
+
+# Rust build artifacts
+/target/
+**/*.rs.bk
+
+# Cargo
+Cargo.lock
+# (keep Cargo.lock for binaries, ignore for libraries if desired)
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# IntelliJ / JetBrains
+.idea/
+
+# Rust Analyzer / Flycheck
+flycheck*
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
