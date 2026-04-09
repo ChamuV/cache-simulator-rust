@@ -1,0 +1,10 @@
+[package]
+name = "cache_register"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+getopts = "0.2"
+
+[dev-dependencies]
+proptest = "1"
