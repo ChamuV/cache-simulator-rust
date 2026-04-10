@@ -1,28 +1,16 @@
-
-
-# Rust build artifacts
-/target/
-**/*.rs.bk
-
-# Cargo
-Cargo.lock
-# (keep Cargo.lock for binaries, ignore for libraries if desired)
-
-# macOS
-.DS_Store
-
-# VSCode
-.vscode/
-
-# IntelliJ / JetBrains
-.idea/
-
-# Rust Analyzer / Flycheck
-flycheck*
-
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.swp
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cache Simulator Rust</title>
+</head>
+<body>
+  <div class="card repository-card">
+    <h2>Repository</h2>
+    <a href="https://github.com/ChamuV/cache-simulator-rust/tree/main" target="_blank" rel="noopener">
+      🔗 github.com/ChamuV/cache-simulator-rust
+    </a>
+  </div>
+</body>
+</html>

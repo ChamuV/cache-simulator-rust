@@ -1,0 +1,47 @@
+   0.129539083s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="cache_register"}: cargo::core::compiler::fingerprint: dependency on `cache_register` is newer than we are 1775719111.772059702s > 1773297156.026645713s "/Users/chamu/cache_register/sim"
+   0.130076000s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="cache_register"}: cargo::core::compiler::fingerprint: fingerprint dirty for cache_register v0.1.0 (/Users/chamu/cache_register/sim)/Check { test: false }/TargetInner { name: "cache_register", doc: true, ..: with_path("/Users/chamu/cache_register/sim/src/main.rs", Edition2024) }
+   0.130118667s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="cache_register"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDependency { name: "cache_register", dep_mtime: FileTime { seconds: 1775719111, nanos: 772059702 }, max_mtime: FileTime { seconds: 1773297156, nanos: 26645713 } })
+   0.131165292s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="cache_register"}: cargo::core::compiler::fingerprint: fingerprint error for cache_register v0.1.0 (/Users/chamu/cache_register/sim)/Check { test: true }/TargetInner { name: "cache_register", doc: true, ..: with_path("/Users/chamu/cache_register/sim/src/main.rs", Edition2024) }
+   0.131169875s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="cache_register"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/chamu/cache_register/sim/target/debug/.fingerprint/cache_register-375cd70ecd834c10/test-bin-cache_register`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: cargo_util::paths::read_bytes
+   2: cargo_util::paths::read
+   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   4: cargo::core::compiler::fingerprint::prepare_target
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+   0.151473500s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="hierarchy_tests"}: cargo::core::compiler::fingerprint: dependency on `cache_register` is newer than we are 1775719111.772059702s > 1775718571.018497868s "/Users/chamu/cache_register/sim"
+   0.151700125s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="hierarchy_tests"}: cargo::core::compiler::fingerprint: fingerprint dirty for cache_register v0.1.0 (/Users/chamu/cache_register/sim)/Check { test: true }/TargetInner { kind: "test", name: "hierarchy_tests", benched: false, ..: with_path("/Users/chamu/cache_register/sim/tests/hierarchy_tests.rs", Edition2024) }
+   0.151705875s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="hierarchy_tests"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDependency { name: "cache_register", dep_mtime: FileTime { seconds: 1775719111, nanos: 772059702 }, max_mtime: FileTime { seconds: 1775718571, nanos: 18497868 } })
+   0.152020375s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="integration_tests"}: cargo::core::compiler::fingerprint: dependency on `cache_register` is newer than we are 1775719111.772059702s > 1773297274.764557546s "/Users/chamu/cache_register/sim"
+   0.152257667s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="integration_tests"}: cargo::core::compiler::fingerprint: fingerprint dirty for cache_register v0.1.0 (/Users/chamu/cache_register/sim)/Check { test: true }/TargetInner { kind: "test", name: "integration_tests", benched: false, ..: with_path("/Users/chamu/cache_register/sim/tests/integration_tests.rs", Edition2024) }
+   0.152261792s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="integration_tests"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDependency { name: "cache_register", dep_mtime: FileTime { seconds: 1775719111, nanos: 772059702 }, max_mtime: FileTime { seconds: 1773297274, nanos: 764557546 } })
+   0.152516167s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="property_tests"}: cargo::core::compiler::fingerprint: dependency on `cache_register` is newer than we are 1775719111.772059702s > 1773297274.764587047s "/Users/chamu/cache_register/sim"
+   0.152672125s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="property_tests"}: cargo::core::compiler::fingerprint: fingerprint dirty for cache_register v0.1.0 (/Users/chamu/cache_register/sim)/Check { test: true }/TargetInner { kind: "test", name: "property_tests", benched: false, ..: with_path("/Users/chamu/cache_register/sim/tests/property_tests.rs", Edition2024) }
+   0.152676083s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="property_tests"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDependency { name: "cache_register", dep_mtime: FileTime { seconds: 1775719111, nanos: 772059702 }, max_mtime: FileTime { seconds: 1773297274, nanos: 764587047 } })
+   0.152941250s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="unit_tests"}: cargo::core::compiler::fingerprint: dependency on `cache_register` is newer than we are 1775719111.772059702s > 1773297274.764750839s "/Users/chamu/cache_register/sim"
+   0.153108750s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="unit_tests"}: cargo::core::compiler::fingerprint: fingerprint dirty for cache_register v0.1.0 (/Users/chamu/cache_register/sim)/Check { test: true }/TargetInner { kind: "test", name: "unit_tests", benched: false, ..: with_path("/Users/chamu/cache_register/sim/tests/unit_tests.rs", Edition2024) }
+   0.153114042s  INFO prepare_target{force=false package_id=cache_register v0.1.0 (/Users/chamu/cache_register/sim) target="unit_tests"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleDependency { name: "cache_register", dep_mtime: FileTime { seconds: 1775719111, nanos: 772059702 }, max_mtime: FileTime { seconds: 1773297274, nanos: 764750839 } })
+    Checking cache_register v0.1.0 (/Users/chamu/cache_register/sim)
+error: could not compile `cache_register` (test "hierarchy_tests") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `cache_register` (test "integration_tests") due to 1 previous error
+error: could not compile `cache_register` (bin "cache_register") due to 1 previous error
+error: could not compile `cache_register` (bin "cache_register" test) due to 1 previous error
+error: could not compile `cache_register` (test "property_tests") due to 1 previous error
+error: could not compile `cache_register` (test "unit_tests") due to 1 previous error
